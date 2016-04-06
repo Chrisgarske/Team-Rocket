@@ -1,3 +1,4 @@
+/*Schriftformatierung*/
 
 @font-face {
 	font-family: 'icon';
@@ -65,7 +66,7 @@
 	font-variant: normal;
 	text-transform: none;
 	vertical-align: top;
-	speak: none;
+	speech: none;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
@@ -104,7 +105,7 @@ header > div {
 	width: 100%;
 	max-width: 640px;
 	color: #ffffff;
-	background: rgba(0,0,0,0.1) url('../img/heidelberg.png');
+	background: #ffffff;
 	background-position: center center;
 	background-repeat: no-repeat;
 	border-radius: 8px;
@@ -229,7 +230,7 @@ main section article h3 {
 }
 
 main section article:hover h3 {
-	color: #d0494b;
+	color: #190300;
 }
 
 main section article p {
@@ -238,7 +239,7 @@ main section article p {
 }
 
 main section article a {
-	color: #d0494b;
+	color: #190300;
 	font-weight: bold;
 	text-decoration: none;
 	transition: 250ms all ease-out;
