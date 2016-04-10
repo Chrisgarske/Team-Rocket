@@ -1,25 +1,26 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <title>Awesome Boilerplate</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" charset="UTF-8">
-  <link href="http://fonts.googleapis.com/css?family=Droid+Sans+Mono" rel="stylesheet" type="text/css">
+  <title>Basketball Database</title>
+  <meta charset="UTF-8">
   <link rel="stylesheet" href="design/index2.css">
 </head>
 
 <body>
 	<header>
 		<div>
-			<h1><span>Awesome</span> Boilerplate</h1>
-			<nav>
-				<a href="#content">Super cooler Content!</a><br>
-				<a href="#footer">Hier geht's nach unten</a><br>
-				<a href="https://http.cat/404">Jeder mag Katzen <3</a>
+			<h1 id="title">Awesome Basketball Database</h1>
+			<nav class="nav">
+				<ul id = "navbar">
+					<li><a href="home.html">home</a></li>
+					<li><a href="#addplayer">add player</a></li>
+					<li><a href="players.html">players</a></li>
+				</ul>
 			</nav>
 		</div>
 	</header>
 	<main>
-		<section id="content">
+		<section id="addplayer">
 			<form>
 				<label>Name: <input size="30" type="text" placeholder="Ihr Nachname"><br></label>
 				<label>Vorname: <input size="30" type="text" placeholder="Ihr Vorname"><br></label>
@@ -36,9 +37,8 @@
 
 		</section>
 	</main>
-	<footer id="footer">
-		<img src="img/nodeschool.svg">
+<footer id="footer">
+		<img src="design/basketball_PNG1099.png">
 	</footer>
-	<script src="design/index.js"></script>
 </body>
 </html>
