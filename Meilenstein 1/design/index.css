@@ -1,331 +1,115 @@
-/*Schriftformatierung*/
-
-@font-face {
-	font-family: 'icon';
-	src: url('icon.eot');
-	src: url('icon.eot?#iefix') format('embedded-opentype'),
-		 url('icon.woff') format('woff'),
-		 url('icon.ttf') format('truetype'),
-		 url('icon.svg#icon') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'museo-sans-300';
-	src: url('museo-sans-300.eot');
-	src: url('museo-sans-300.eot?#iefix') format('embedded-opentype'),
-		 url('museo-sans-300.woff2') format('woff2'),
-		 url('museo-sans-300.woff') format('woff'),
-		 url('museo-sans-300.ttf') format('truetype'),
-		 url('museo-sans-300.svg#museo_sans300') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'source-sans-300';
-	src: url('source-sans-300.eot');
-	src: url('source-sans-300.eot?#iefix') format('embedded-opentype'),
-		 url('source-sans-300.woff2') format('woff2'),
-		 url('source-sans-300.woff') format('woff'),
-		 url('source-sans-300.ttf') format('truetype'),
-		 url('source-sans-300.svg#source_sans300') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'source-sans-400';
-	src: url('source-sans-400.eot');
-	src: url('source-sans-400.eot?#iefix') format('embedded-opentype'),
-		 url('source-sans-400.woff2') format('woff2'),
-		 url('source-sans-400.woff') format('woff'),
-		 url('source-sans-400.ttf') format('truetype'),
-		 url('source-sans-400.svg#source_sans400') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'source-sans-700';
-	src: url('source-sans-700.eot');
-	src: url('source-sans-700.eot?#iefix') format('embedded-opentype'),
-		 url('source-sans-700.woff2') format('woff2'),
-		 url('source-sans-700.woff') format('woff'),
-		 url('source-sans-700.ttf') format('truetype'),
-		 url('source-sans-700.svg#source_sans700') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
-
-
-.icon:before {
-	font-family: 'icon';
-	font-weight: normal;
-	font-variant: normal;
-	text-transform: none;
-	vertical-align: top;
-	speech: none;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-}
-
-.icon-learn:before  { content: '\e05c'; }
-.icon-power:before  { content: '\e026'; }
-.icon-help:before   { content: '\e08a'; }
-.icon-start:before  { content: '\e017'; }
-.icon-follow:before { content: '\e03b'; }
-
-
 
 body {
-	margin: 0px;
-	padding: 0px;
-	font-family: 'museo-sans-300';
-	font-size: 16px;
-	color: #ffffff;
-	background: #333333;
+    margin: 0px;
+    padding: 0px;
+    font-size: 16px;
+    color: #060402;
+    background: #ffffff;
+    font-family: "Helvetica Neue" , Arial, Helvetica, sans-serif;
 }
 
 header {
-	width: 100%;
-	padding: 128px 0px;
-	background-color: #ffe51f;
-	background-image: url('./background.png');
-	background-position: 0px 0px;
-	background-blend-mode: multiply;
-	background-repeat: repeat repeat;
-}
-
-header > div {
-	display: block;
-	margin: 0px auto;
-	padding: 64px;
-	width: 100%;
-	max-width: 640px;
-	color: #ffffff;
-	background: #ffffff;
-	background-position: center center;
-	background-repeat: no-repeat;
-	border-radius: 8px;
-	text-align: center;
-}
-
-header > div > p > label {
-	display: inline-block;
-	width: 45%;
-	float: left;
-	text-align: right;
-	color: #333333;
-}
-
-header > div > p > a {
-	display: inline-block;
-	width: 45%;
-	float: right;
-	text-align: left;
-}
-
-header > div > p:after {
-	content: " ";
-	display: table;
-	clear: both;
-	*zoom: 1;
-}
-
-header h1 {
-	display: block;
-	margin: 0px;
-	padding: 0px;
-	font-family: 'source-sans-700';
-	font-size: 40px;
-}
-
-header h1 > span {
-	color: #333333;
-}
-
-header p {
-	margin: 32px 0px 0px 0px;
-	font-family: 'museo-sans-300';
-	font-size: 20px;
-}
-
-header a {
-	color: #d0494b;
-	font-weight: bold;
-	text-decoration: none;
-	transition: 250ms all ease-out;
-}
-
-header a:hover,
-header a:focus {
-	color: #333333;
-	transition: 250ms all ease-out;
-}
-
-header small {
-	display: inline-block;
-	margin: 2em 0px 0px 0px;
-	font-size: 16px;
-	color: #333333;
+    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+    background: #FD6C00;
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    width: 100%;
+    padding: 20px 0px 0px 0px;
 }
 
 
-main section {
-	padding: 16px 0px;
-	text-align: center;
+/*Navbar*/
+
+
+.nav ul {
+    font-size: 16px;
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    background-color: #FBBE91;
+    border-bottom: 1px solid #060402;
+    border-top: 1px solid #060402;
+    border-left: 1px solid #060402;
 }
 
-main section:nth-of-type(1) {
-	padding: 15% 0px;
+.nav li {
+    border-right: 1px solid #060402;
+    float: left;
+    display:inline-block;
+    text-align: center;
+    position: relative;
 }
 
-main section article {
-	display: inline-block;
-	width: 320px;
-	height: 420px;
-	margin: 16px;
-	padding: 16px;
-	vertical-align: top;
-	background-color: rgba(255,255,255,0.1);
-	border-radius: 8px;
-}
-
-main section article figure {
-	display: block;
-	width: 144px;
-	height: 144px;
-	margin: 16px auto;
-	text-align: center;
-}
-
-main section article figure div {
-	display: inline-block;
-	width: 112px;
-	height: 112px;
-	line-height: 112px;
-	font-size: 48px;
-	border: 8px solid #e0b113;
-	background: #ffe51f;
-	border-radius: 128px;
-	transition: all 250ms ease-out;
-}
-
-main section article:hover figure div {
-	width: 96px;
-	height: 96px;
-	line-height: 96px;
-	border: 16px solid #b33f40;
-	background: #d0494b;
-	font-size: 64px;
-}
-
-main section article h3 {
-	margin: 32px 0px;
-	font-size: 32px;
-	text-align: center;
-	transition: all 250ms ease-out;
-}
-
-main section article:hover h3 {
-	color: #190300;
-}
-
-main section article p {
-	font-size: 20px;
-	text-align: justify;
-}
-
-main section article a {
-	color: #190300;
-	font-weight: bold;
-	text-decoration: none;
-	transition: 250ms all ease-out;
-}
-
-main section article a:hover,
-main section article a:focus {
-	color: #ffe51f;
-	transition: 250ms all ease-out;
-}
-
-
-main section article.social {
-	width: auto;
-	height: auto;
-}
-
-
-main section article.social a {
-	display: inline-block;
-	margin: 16px;
-	width: 64px;
-	height: 64px;
-	border-radius: 32px;
-	vertical-align: top;
-}
-
-main section article.social a:hover,
-main section article.social a:focus {
-	background: #ffe51f;
-}
-
-
-footer {
-	width: 100%;
-	padding: 64px 0px;
-	background-color: #ffe51f;
-	background-image: url('./background.png');
-	background-size: 25%;
-	background-position: 0px 0px;
-	background-blend-mode: multiply;
-	background-repeat: repeat repeat;
-}
-
-footer a {
-	display: block;
-	width: 30%;
-	margin: 0 auto;
-}
-
-footer a img {
-	width: 100%;
-}
-
-
-/*
- * MEDIA QUERIES
- */
-
-@media (max-width: 420px) {
-
-	header > div {
-		width: auto;
-		max-width: initial;
-	}
-
-	header p {
-		line-height: 2em;
-	}
-
-	main section article {
-		display: block;
-		margin: 16px 0px;
-		width: auto;
-	}
+.nav a {
+    display: block;
+    color: #060402;
+    text-align: center;
+    padding: 14px 71px;
+    text-decoration: none;
 
 }
 
-@media (max-width: 320px) {
-
-	header > div {
-		padding: 16px 0px;
-	}
-
-	header p {
-		text-align: justify;
-	}
-
+.nav a:hover {
+    background-color: #545454;
+    color: white;
 }
+
+.nav a.active {
+    background-color: #060402;
+    color: white;
+    cursor: default;
+}
+
+#addplayer{
+    padding: 40px;
+    text-align: center;
+}
+
+img{
+    max-width: 15%;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+}
+
+footer{
+    background-color: #FBBE91 ;
+}
+
+
+
+
+
+
+/* CSS - Cascading Style Sheet */
+/* Palette color codes */
+/* Palette URL: http://paletton.com/#uid=1050u0kllll1qRAbnurvjcfWN38 */
+
+/* Feel free to copy&paste color codes to your application */
+
+
+/* As hex codes */
+
+.color-primary-0 { color: #FD6C00 }	/* Main Primary color */
+.color-primary-1 { color: #FBBE91 }
+.color-primary-2 { color: #545454 }
+.color-primary-3 { color: #610D02 }
+.color-primary-4 { color: #060402 }
+
+
+
+/* As RGBa codes */
+
+.rgba-primary-0 { color: rgba(170, 70, 57,1) }	/* Main Primary color */
+.rgba-primary-1 { color: rgba(255,245,244,1) }
+.rgba-primary-2 { color: rgba(243,166,156,1) }
+.rgba-primary-3 { color: rgba( 97, 13,  2,1) }
+.rgba-primary-4 { color: rgba( 25,  3,  0,1) }
+
+
+
+/* Generated by Paletton.com Â© 2002-2014 */
+/* http://paletton.com */
