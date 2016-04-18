@@ -8,6 +8,7 @@ body {
     background-image: url("../img/background.png");
     background-repeat: repeat;
     font-family: "Helvetica Neue" , Arial, Helvetica, sans-serif;
+    overflow: auto;
 }
 
 header {
@@ -87,9 +88,38 @@ footer{
     width: 50%;
     margin-left:auto;
     margin-right:auto;
-    height: 400px;
+    height: 365px;
+    overflow: auto;
 }
 
+input[type=text] {
+    width: 60%;
+    padding: 6px 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+input[type=checkbox]{
+
+}
+
+input[type=number]{
+
+}
+
+select{
+
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+    background-color: #060402;
+    border: none;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
 
 
 
