@@ -1,9 +1,12 @@
+/*Allgemein*/
 
 body {
     margin: 0px;
     font-size: 16px;
     color: #060402;
-    background: #ffffff;
+    background: lightgray;
+    background-image: url("../img/background.png");
+    background-repeat: repeat;
     font-family: "Helvetica Neue" , Arial, Helvetica, sans-serif;
 }
 
@@ -17,6 +20,20 @@ header {
     padding: 20px 0px 0px 0px;
 }
 
+img{
+    max-width: 15%;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+}
+
+footer{
+    background-color: #FBBE91 ;
+    position:absolute;
+    bottom: 0;
+    width: 100%;
+}
 
 /*Navbar*/
 
@@ -61,22 +78,19 @@ header {
     cursor: default;
 }
 
+ /* Formular index.html*/
+
 #addplayer{
-    padding: 40px;
+    padding: 50px;
     text-align: center;
+    background: white;
+    width: 50%;
+    margin-left:auto;
+    margin-right:auto;
+    height: 400px;
 }
 
-img{
-    max-width: 15%;
-    height: auto;
-    margin-right: auto;
-    margin-left: auto;
-    display: block;
-}
 
-footer{
-    background-color: #FBBE91 ;
-}
 
 
 
