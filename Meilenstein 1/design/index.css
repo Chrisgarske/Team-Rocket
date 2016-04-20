@@ -9,6 +9,9 @@ body {
     background-repeat: repeat;
     font-family: "Helvetica Neue" , Arial, Helvetica, sans-serif;
     overflow: auto;
+    position: relative;
+    min-height: 100%;
+    padding-bottom: 5.7em;
 }
 
 header {
@@ -22,7 +25,7 @@ header {
 }
 
 img{
-    max-width: 15%;
+    max-width: 10%;
     height: auto;
     margin-right: auto;
     margin-left: auto;
@@ -30,10 +33,11 @@ img{
 }
 
 footer{
-    background-color: #FBBE91 ;
+    background-color: #FBBE91;
     position:absolute;
     bottom: 0;
     width: 100%;
+    height: 5.7em;
 }
 
 /*Navbar*/
@@ -82,45 +86,74 @@ footer{
  /* Formular index.html*/
 
 #addplayer{
-    padding: 50px;
-    text-align: center;
     background: white;
     width: 50%;
     margin-left:auto;
     margin-right:auto;
-    height: 365px;
     overflow: auto;
+    padding: 20px;
 }
 
-input[type=text] {
-    width: 60%;
-    padding: 6px 10px;
-    margin: 8px 0;
-    box-sizing: border-box;
+
+input[type="text"] {
+    display: block;
+    margin: 0;
+    width: 80%;
+    appearance: none;
+    box-shadow: none;
+    padding: 8px;
+    border: solid 1px #dcdcdc;
+    transition: box-shadow 0.3s, border 0.3s;
+}
+input[type="text"]:focus {
+    border: solid 1px #707070;
+    box-shadow: 0 0 5px 1px #969696;
 }
 
 input[type=checkbox]{
-
+    margin-bottom: 14px;
 }
 
 input[type=number]{
+    display: block;
+    margin: 0;
+    width: 10%;
+    appearance: none;
+    box-shadow: none;
+    padding: 6px;
+    border: solid 1px #dcdcdc;
+    transition: box-shadow 0.3s, border 0.3s;
 
 }
 
 select{
-
+    display: block;
+    margin: 0;
+    width: 10%;
+    appearance: none;
+    box-shadow: none;
+    padding: 6px;
+    border: solid 1px #dcdcdc;
+    transition: box-shadow 0.3s, border 0.3s;
 }
 
 input[type=button], input[type=submit], input[type=reset] {
-    background-color: #060402;
-    border: none;
-    color: white;
-    padding: 12px 20px;
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+    padding: 8px 16px;
+    text-align: center;
     text-decoration: none;
-    margin: 4px 2px;
-    cursor: pointer;
+    display: block;
+    font-size: 16px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
 }
 
+input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover {
+    background-color: #060402;
+    color: white;
+}
 
 
 
