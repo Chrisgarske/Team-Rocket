@@ -5,6 +5,33 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="design/index.css">
     <script language="javascript" type="text/javascript" src="index.js"></script>
+    <script type="text/javascript">
+
+    function check_info() {
+
+        var vorname = document.getElementById("vorname").value;
+        var name = document.getElementById("name").value;
+        var verein = document.getElementById("verein").value;
+        var headcoach = document.getElementById("headcoach").value;
+        var assistant = document.getElementById("assistant").value;
+
+
+        // KEINE AHNUNG WELCHE ABKÜRZUNG HIER DAS ALPHABET BESCHREIBT OHNE ANDERE ZEICHEN ZUZULASSEN!!!!!!!!
+        if (vorname == /^[a-zA-Z]+$/){
+            return true;
+
+
+        }
+        else
+        {
+            alert("Einige Eingaben sind fehlerhaft. Bitte überprüfen Sie ihre Eingaben");
+            return false;
+        }
+
+    }
+
+
+    </script>
 </head>
 
 <body>
@@ -26,14 +53,14 @@
     <section id="addplayer">
         <form action="http://martinakraus.net/createPlayer.php" method="get" onsubmit="return check_info();">
             <label>Vorname: <input size="30" type="text" name="vorname" placeholder="Ihren Vornamen"
-                                   required></label><br>
-            <label>Name: <input size="30" type="text" name="name" placeholder="Ihren Nachnamen" required></label><br>
+                                   required id="vorname"></label><br>
+            <label>Name: <input size="30" type="text" name="name" placeholder="Ihren Nachnamen" required id="name"></label><br>
             <label>Verein: <input size="30" type="text" name="verein" placeholder="Name des Vereins"
-                                  required></label><br>
+                                  required id="verein"></label><br>
             <label>Headcoach: <input size="30" type="text" name="hcoach" placeholder="Name des Headcoachs"
-                                     required></label><br>
+                                     required id="headcoach"></label><br>
             <label>Assistant Coach: <input size="30" type="text" name="acoach" placeholder="Name des Assistant Coachs"
-                                           required></label><br>
+                                           required id="assistant"></label><br>
             <label>Aktiv: ja<input type="checkbox" name="aktiv" value="ja"/><br/>
             </label>
             <label>Position: <select name="position">
