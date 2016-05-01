@@ -4,19 +4,22 @@
     <title>Basketball Database</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="design/index.css">
+    <script language="javascript" type="text/javascript" src="index.js"></script>
 </head>
 
 <body>
 <header>
     <div>
-        <h1 id="title">Awesome Basketball Database</h1>
-        <nav class="nav">
-            <ul>
-                <li><a href="home.html">home</a></li>
-                <li><a href="index.html" class="active">add player</a></li>
-                <li><a href="players.html">players</a></li>
-            </ul>
-        </nav>
+        <div>
+            <h1 id="title">Awesome Basketball Database</h1>
+        </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="home.html">home</a></li>
+                    <li><a href="index.html" class="active">add player</a></li>
+                    <li><a href="players.html">players</a></li>
+                </ul>
+            </nav>
     </div>
 </header>
 <main>
@@ -40,8 +43,10 @@
                 <option value="wing" selected="selected">Wing</option>
                 <option value="small forward">Small Forward</option>
             </select><br></label>
-            <label>Rückennummer: <input type="number" name="number" placeholder="Die Rückennummer" min="0" max="99" value="10" required></label><br>
-            <label>Geburtsjahr: <input type="number" name="jahr" placeholder="Das Geburtsjahr" min="1900" max="2016" value="1990" required></label><br>
+            <label>Rückennummer: <input type="number" name="number" placeholder="Die Rückennummer" min="0" max="99"
+                                        value="10" required></label><br>
+            <label>Geburtsjahr: <input type="number" name="jahr" placeholder="Das Geburtsjahr" min="1900" max="2016"
+                                       value="1990" required></label><br>
             <label>Als Favorit markieren:<input type="checkbox" name="favorit" value="ok"/><br/></label>
             <input type="submit">
 
