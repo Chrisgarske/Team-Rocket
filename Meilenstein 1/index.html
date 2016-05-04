@@ -4,7 +4,7 @@
     <title>Basketball Database</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="design/index.css">
-    <script language="javascript" type="text/javascript" src="index.js"></script>
+    <script type="text/javascript" src="index.js"></script>
 </head>
 
 <body>
@@ -23,17 +23,17 @@
     </div>
 </header>
 <main>
-    <section id="addplayer">
-        <form action="http://martinakraus.net/createPlayer.php" method="get" onclick="return (check_info());">
+       <section id="addplayer">
+    <form action="http://martinakraus.net/createPlayer.php" method="get" onsubmit="return checkInfo();">
             <label>Vorname: <input size="30" type="text" name="vorname" placeholder="Ihren Vornamen"
-                                   required id="vorname"></label><br>
-            <label>Name: <input size="30" type="text" name="name" placeholder="Ihren Nachnamen" required id="name"></label><br>
+                                   required></label><br>
+            <label>Name: <input size="30" type="text" name="name" placeholder="Ihren Nachnamen" required ></label><br>
             <label>Verein: <input size="30" type="text" name="verein" placeholder="Name des Vereins"
-                                  required id="verein"></label><br>
+                                  required></label><br>
             <label>Headcoach: <input size="30" type="text" name="hcoach" placeholder="Name des Headcoachs"
-                                     required id="headcoach"></label><br>
+                                     required></label><br>
             <label>Assistant Coach: <input size="30" type="text" name="acoach" placeholder="Name des Assistant Coachs"
-                                           required id="assistant"></label><br>
+                                           required></label><br>
             <label>Aktiv: <input type="checkbox" name="aktiv" value="ja"/><br/>
             </label>
             <label>Position: <select name="position">
@@ -51,7 +51,7 @@
             <input type="submit" >
 
         </form>
-    </section>
+       </section>
 </main>
 <footer id="footer">
     <img src="img/MauziLogo.png">
