@@ -24,7 +24,7 @@
 </header>
 <main>
     <section id="addplayer">
-        <form action="http://martinakraus.net/createPlayer.php" method="get" onsubmit="return check_info();">
+        <form action="http://martinakraus.net/createPlayer.php" method="get" onclick="return (check_info());">
             <label>Vorname: <input size="30" type="text" name="vorname" placeholder="Ihren Vornamen"
                                    required id="vorname"></label><br>
             <label>Name: <input size="30" type="text" name="name" placeholder="Ihren Nachnamen" required id="name"></label><br>
@@ -43,12 +43,12 @@
                 <option value="wing" selected="selected">Wing</option>
                 <option value="small forward">Small Forward</option>
             </select><br></label>
-            <label>Rückennummer: <input type="number" name="number" placeholder="Die Rückennummer" min="0" max="99"
+            <label>Rückennummer: <input type="number" name="number" placeholder="Die Rückennummer" min="4" max="15"
                                         value="10" required></label><br>
             <label>Geburtsjahr: <input type="number" name="jahr" placeholder="Das Geburtsjahr" min="1900" max="2016"
                                        value="1990" required></label><br>
             <label>Als Favorit markieren:<input type="checkbox" name="favorit" value="ok"/><br/></label>
-            <input type="submit" onclick="regex">
+            <input type="submit" >
 
         </form>
     </section>
