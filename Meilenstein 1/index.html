@@ -13,21 +13,21 @@
         <div>
             <h1 id="title">Awesome Basketball Database</h1>
         </div>
-            <nav class="nav">
-                <ul>
-                    <li><a href="home.html">home</a></li>
-                    <li><a href="index.html" class="active">add player</a></li>
-                    <li><a href="players.html">players</a></li>
-                </ul>
-            </nav>
+        <nav class="nav">
+            <ul>
+                <li><a href="home.html">home</a></li>
+                <li><a href="index.html" class="active">add player</a></li>
+                <li><a href="players.html">players</a></li>
+            </ul>
+        </nav>
     </div>
 </header>
 <main>
-       <section id="addplayer">
-    <form action="http://martinakraus.net/createPlayer.php" method="get" onsubmit="return checkInfo();">
+    <section id="addplayer">
+        <form action="http://martinakraus.net/createPlayer.php" method="get" onsubmit="return checkInfo();">
             <label>Vorname: <input size="30" type="text" name="vorname" placeholder="Ihren Vornamen"
                                    required></label><br>
-            <label>Name: <input size="30" type="text" name="name" placeholder="Ihren Nachnamen" required ></label><br>
+            <label>Name: <input size="30" type="text" name="name" placeholder="Ihren Nachnamen" required></label><br>
             <label>Verein: <input size="30" type="text" name="verein" placeholder="Name des Vereins"
                                   required></label><br>
             <label>Headcoach: <input size="30" type="text" name="hcoach" placeholder="Name des Headcoachs"
@@ -48,10 +48,10 @@
             <label>Geburtsjahr: <input type="number" name="jahr" placeholder="Das Geburtsjahr" min="1900" max="2016"
                                        value="1990" required></label><br>
             <label>Als Favorit markieren:<input type="checkbox" name="favorit" value="ok"/><br/></label>
-            <input type="submit" >
+            <input type="submit">
 
         </form>
-       </section>
+    </section>
 </main>
 <footer id="footer">
     <img src="img/MauziLogo.png">
