@@ -22,9 +22,27 @@ function checkInfo() {
         return false;
 
     }
-        else{
+    else {
         return true;
     }
+}
+
+    function sendForm(form) {
+
+        if (!checkInfo()) {
+            return false;
+        }
+        else {
+
+
+            var formData = new FormData(form);
+            var xhr = new XMLHttpRequest();
+            xhr.open('POST', '/http://139.59.134.26/ ', true);
+            xhr.setRequestHeader('Content-Type', 'application/json');
+            xhr.send(formData)
+
+            return false;
+        }
     }
 
 

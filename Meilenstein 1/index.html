@@ -24,7 +24,7 @@
 </header>
 <main>
        <section id="addplayer">
-    <form action="http://martinakraus.net/createPlayer.php" method="get" onsubmit="return checkInfo();">
+    <form onsubmit="return checkInfo();">
             <label>Vorname: <input size="30" type="text" name="vorname" placeholder="Ihren Vornamen"
                                    required></label><br>
             <label>Name: <input size="30" type="text" name="name" placeholder="Ihren Nachnamen" required ></label><br>
@@ -48,8 +48,7 @@
             <label>Geburtsjahr: <input type="number" name="jahr" placeholder="Das Geburtsjahr" min="1900" max="2016"
                                        value="1990" required></label><br>
             <label>Als Favorit markieren:<input type="checkbox" name="favorit" value="ok"/><br/></label>
-            <input type="submit" >
-
+           <input type="submit" name="knopf" onclick="return sendForm(this.form)" >
         </form>
        </section>
 </main>
