@@ -21,7 +21,7 @@ function checkInfo() {
         return true;
     }
 }
-<<<<<<< HEAD
+
 
     function sendForm(form) {
 
@@ -40,8 +40,7 @@ function checkInfo() {
             return false;
         }
     }
-=======
->>>>>>> origin/master
+
 
 
 
