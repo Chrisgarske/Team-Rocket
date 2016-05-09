@@ -82,7 +82,9 @@ function getPlayers(favorite, callback) {
 
 }
 
-// Allgemeine request Funktion, führt AJAX Request aus
+/* Allgemeine request Funktion, führt AJAX Request aus
+ (AJAX ermöglicht es Inhalte dynamisch nachzuladen,
+ ohne dass die komplette Seite neu geladen werden muss) */
 function request(method, url, formData, callback) {
 
     var xhr = new XMLHttpRequest();
