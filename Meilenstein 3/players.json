@@ -151,7 +151,7 @@
     "position": "Guard",
     "number": 4,
     "year": 1960,
-    "favorit": true
+    "favorit": false
   },
   {
     "id": "5745bf399f0b8bf59f855549",
@@ -162,7 +162,7 @@
     "position": "Power Forward",
     "number": 15,
     "year": 1955,
-    "favorit": true
+    "favorit": false
   },
   {
     "id": "5745bf39a2ee4b053777c31b",
@@ -184,7 +184,7 @@
     "position": "Power Forward",
     "number": 14,
     "year": 1957,
-    "favorit": true
+    "favorit": false
   },
   {
     "id": "5745bf397832788bb4df8aec",
@@ -195,7 +195,7 @@
     "position": "Wing",
     "number": 6,
     "year": 1974,
-    "favorit": true
+    "favorit": false
   },
   {
     "id": "5745bf39dbcd52b8ff92da61",
@@ -206,7 +206,7 @@
     "position": "Power Forward",
     "number": 12,
     "year": 2000,
-    "favorit": true
+    "favorit": false
   },
   {
     "id": "5745bf39aadfebfcb5986441",
