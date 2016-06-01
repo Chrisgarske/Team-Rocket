@@ -1,4 +1,4 @@
-var URL = 'http://139.59.134.26/api/players';
+var URL = 'http://127.0.0.1:3000/api/players';
 
 // Wird aufgerufen wenn html geladen wurde
 window.addEventListener("DOMContentLoaded", function () {
@@ -6,16 +6,16 @@ window.addEventListener("DOMContentLoaded", function () {
     function updatePlayer() {
         getPlayers(favoritesCheckbox.checked, function (players) {
             updateTable(playerTable, players);
-        })
+        });
     }
     // Inizialisiert die Spielertabelle
     var playerTable = document.querySelector("#playertable > table")
     if (playerTable) {
         var favoritesCheckbox = document.getElementById("favorites");
         favoritesCheckbox.addEventListener("change", function () {
-            updatePlayer()
+            updatePlayer();
         })
-        updatePlayer()
+        updatePlayer();
     }
     // Inizialisiert das Absenden des Forumulares
     var addPlayerForm = document.querySelector("#addplayer > form")
