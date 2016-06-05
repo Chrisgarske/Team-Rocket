@@ -1,10 +1,18 @@
 {
-  "name": "Express-web-app",
-  "version": "1.0.0",
+  "name": "Team-Rocket",
+  "version": "0.1",
+  "description": "Kleine Website für das Modul Webanwendungen an der HS Mannheim",
+  "author": "Katharina, Christian",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Chrisgarske/Team-Rocket"
+  },
+  "bugs": {
+    "url": "https://github.com/Chrisgarske/Team-Rocket/issues"
+  },
   "dependencies": {
-    "ejs": "~1.0.0",
     "express": "~4.0.0",
-    "mysql": "*",
-    "underscore": "^1.8.3"
+    "underscore": "^1.8.3",
+    "license": "MIT"
   }
 }
