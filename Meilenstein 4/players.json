@@ -1,0 +1,222 @@
+[
+  {
+    "id": "5745bf392a6e43917ab03fdf",
+    "name": "Travis",
+    "vorname": "Schroeder",
+    "club": "CINCYR",
+    "coach": "Joyce Humphrey",
+    "position": "Small Forward",
+    "number": 9,
+    "year": 1997,
+    "favorit": false
+  },
+  {
+    "id": "5745bf3904f8a547070196a6",
+    "name": "Willis",
+    "vorname": "Alejandra",
+    "club": "LUXURIA",
+    "coach": "Morgan Small",
+    "position": "Power Forward",
+    "number": 11,
+    "year": 1976,
+    "favorit": true
+  },
+  {
+    "id": "5745bf39d2757f5de8defeb1",
+    "name": "Macdonald",
+    "vorname": "Sanders",
+    "club": "WEBIOTIC",
+    "coach": "Mcmahon Lamb",
+    "position": "Wing",
+    "number": 6,
+    "year": 1960,
+    "favorit": true
+  },
+  {
+    "id": "5745bf3983f058e3ab4c8035",
+    "name": "Joseph",
+    "vorname": "Frankie",
+    "club": "PEARLESSA",
+    "coach": "Brown Bray",
+    "position": "Small Forward",
+    "number": 14,
+    "year": 1962,
+    "favorit": true
+  },
+  {
+    "id": "5745bf39d602563289aef7cc",
+    "name": "Grimes",
+    "vorname": "Valencia",
+    "club": "GEOLOGIX",
+    "coach": "Jannie Glass",
+    "position": "Center",
+    "number": 10,
+    "year": 1986,
+    "favorit": true
+  },
+  {
+    "id": "5745bf39a117f7040c8e7eda",
+    "name": "Crane",
+    "vorname": "Bryant",
+    "club": "PLEXIA",
+    "coach": "Rosario Barry",
+    "position": "Center",
+    "number": 6,
+    "year": 1979,
+    "favorit": false
+  },
+  {
+    "id": "5745bf39e56b055188b2d3bb",
+    "name": "Knapp",
+    "vorname": "Bradford",
+    "club": "ISODRIVE",
+    "coach": "Maddox Alexander",
+    "position": "Small Forward",
+    "number": 8,
+    "year": 1971,
+    "favorit": true
+  },
+  {
+    "id": "5745bf39756b85defeb1587d",
+    "name": "Carpenter",
+    "vorname": "Rachel",
+    "club": "HONOTRON",
+    "coach": "Hooper Keith",
+    "position": "Power Forward",
+    "number": 6,
+    "year": 1985,
+    "favorit": true
+  },
+  {
+    "id": "5745bf3994403784ba535a77",
+    "name": "Soto",
+    "vorname": "Brianna",
+    "club": "KNEEDLES",
+    "coach": "Todd Donovan",
+    "position": "Small Forward",
+    "number": 13,
+    "year": 1979,
+    "favorit": true
+  },
+  {
+    "id": "5745bf395099fdc7c07c78bf",
+    "name": "Warren",
+    "vorname": "Lois",
+    "club": "ZIPAK",
+    "coach": "Harrison Norman",
+    "position": "Center",
+    "number": 4,
+    "year": 1953,
+    "favorit": true
+  },
+  {
+    "id": "5745bf3982019153386f93ac",
+    "name": "Conley",
+    "vorname": "Ola",
+    "club": "NITRACYR",
+    "coach": "Stella Ruiz",
+    "position": "Center",
+    "number": 8,
+    "year": 1982,
+    "favorit": false
+  },
+  {
+    "id": "5745bf3954b760df8999f5f8",
+    "name": "Meadows",
+    "vorname": "Maggie",
+    "club": "TETAK",
+    "coach": "Knox Brock",
+    "position": "Wing",
+    "number": 13,
+    "year": 1945,
+    "favorit": false
+  },
+  {
+    "id": "5745bf399b18263df528db9f",
+    "name": "Sampson",
+    "vorname": "Lorie",
+    "club": "INTERFIND",
+    "coach": "Fanny Sexton",
+    "position": "Small Forward",
+    "number": 9,
+    "year": 1945,
+    "favorit": true
+  },
+  {
+    "id": "5745bf392f34e2ab5067fb9a",
+    "name": "Sandoval",
+    "vorname": "Tracy",
+    "club": "BALUBA",
+    "coach": "Moon Stokes",
+    "position": "Guard",
+    "number": 4,
+    "year": 1960,
+    "favorit": false
+  },
+  {
+    "id": "5745bf399f0b8bf59f855549",
+    "name": "Ward",
+    "vorname": "Celeste",
+    "club": "OULU",
+    "coach": "Gross Gentry",
+    "position": "Power Forward",
+    "number": 15,
+    "year": 1955,
+    "favorit": false
+  },
+  {
+    "id": "5745bf39a2ee4b053777c31b",
+    "name": "Hampton",
+    "vorname": "Fitzgerald",
+    "club": "HOPELI",
+    "coach": "Mercedes Orr",
+    "position": "Center",
+    "number": 9,
+    "year": 1943,
+    "favorit": false
+  },
+  {
+    "id": "5745bf3958d398ee6bc1d2fa",
+    "name": "Mason",
+    "vorname": "Lucia",
+    "club": "HAWKSTER",
+    "coach": "Anita Mcfarland",
+    "position": "Power Forward",
+    "number": 14,
+    "year": 1957,
+    "favorit": false
+  },
+  {
+    "id": "5745bf397832788bb4df8aec",
+    "name": "Rutledge",
+    "vorname": "Juliet",
+    "club": "GEEKUS",
+    "coach": "Melody Peterson",
+    "position": "Wing",
+    "number": 6,
+    "year": 1974,
+    "favorit": false
+  },
+  {
+    "id": "5745bf39dbcd52b8ff92da61",
+    "name": "Page",
+    "vorname": "Powers",
+    "club": "ZERBINA",
+    "coach": "Latoya Little",
+    "position": "Power Forward",
+    "number": 12,
+    "year": 2000,
+    "favorit": false
+  },
+  {
+    "id": "5745bf39aadfebfcb5986441",
+    "name": "Munoz",
+    "vorname": "Darcy",
+    "club": "NURALI",
+    "coach": "Becky Harrington",
+    "position": "Center",
+    "number": 7,
+    "year": 1957,
+    "favorit": false
+  }
+]
