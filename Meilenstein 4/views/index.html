@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Basketball Database</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../design/index.css">
+    <script type="text/javascript" src="../javascript/index.js"></script>
+</head>
+
+<body>
+<header>
+    <div>
+        <div>
+            <h1 id="title">Awesome Basketball Database</h1>
+        </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="home.html">home</a></li>
+                    <li><a href="index.html" class="active">add player</a></li>
+                    <li><a href="players.html">players</a></li>
+                    <li><a href="chat.html">chat</a></li>
+                </ul>
+            </nav>
+    </div>
+</header>
+<main>
+       <section id="addplayer">
+           <form>
+            <label>Vorname: <input size="30" type="text" name="vorname" placeholder="Ihren Vornamen"
+                                   required></label><br>
+            <label>Name: <input size="30" type="text" name="name" placeholder="Ihren Nachnamen" required ></label><br>
+            <label>Verein: <input size="30" type="text" name="verein" placeholder="Name des Vereins"
+                                  required></label><br>
+            <label>Headcoach: <input size="30" type="text" name="hcoach" placeholder="Name des Headcoachs"
+                                     required></label><br>
+            <label>Assistant Coach: <input size="30" type="text" name="acoach" placeholder="Name des Assistant Coachs"
+                                           required></label><br>
+            <label>Aktiv: <input type="checkbox" name="aktiv" value="ja"/><br/>
+            </label>
+            <label>Position: <select name="position">
+                <option value="center">Center</option>
+                <option value="guard">Guard</option>
+                <option value="power forward">Power Forward</option>
+                <option value="wing" selected="selected">Wing</option>
+                <option value="small forward">Small Forward</option>
+            </select><br></label>
+            <label>Rückennummer: <input type="number" name="number" placeholder="Die Rückennummer" min="4" max="15"
+                                        value="10" required></label><br>
+            <label>Geburtsjahr: <input type="number" name="jahr" placeholder="Das Geburtsjahr" min="1900" max="2016"
+                                       value="1990" required></label><br>
+            <label>Als Favorit markieren:<input type="checkbox" name="favorit" value="ok"/><br/></label>
+               <input type="submit">
+
+        </form>
+       </section>
+</main>
+<footer id="footer">
+    <img src="../img/MauziLogo.png">
+</footer>
+</body>
+</html>
