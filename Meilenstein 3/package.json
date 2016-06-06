@@ -11,8 +11,7 @@
     "url": "https://github.com/Chrisgarske/Team-Rocket/issues"
   },
   "dependencies": {
-    "express": "~4.0.0",
-    "underscore": "^1.8.3"
+    "express": "~4.0.0"
   },
   "license": "MIT"
 }
