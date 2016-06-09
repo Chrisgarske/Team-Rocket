@@ -41,7 +41,17 @@ export default function (app) {
     });
 
     app.delete('/api/players/:id', (req, res) => {
-        res.send('DELETE request to homepage'); // TO DO
+        console.log('DELETE request to homepage');
+
+        if (!where(players, {id: req.params.id})) {
+            res.status(404).json('Der genannte Spieler existiert nicht');
+        } else {
+            let filtered = _.filter(AllPlayers, function (e) {
+                return !(e.id === req.params.id);
+            });
+            AllPlayers = filtered;
+            res.status(200).json(filtered);
+        }
     });
 
 }
