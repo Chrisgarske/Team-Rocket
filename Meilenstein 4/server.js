@@ -21,7 +21,7 @@ let historyLength = 0;
 
 function nameAvailable(nameToCheck) {
     for (let [name] of connectedUsers) {
-        if (name == nameToCheck) {
+        if (name === nameToCheck) {
             return false;
         }
     }
