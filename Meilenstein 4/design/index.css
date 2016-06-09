@@ -198,6 +198,26 @@ th, td {
     padding: 20px;
 }
 
+/* chat.html */
+
+#chat {
+    background: white;
+}
+
+.name::after{
+    content: ":";
+}
+
+.join{
+    color: gray;
+    font-style: italic;
+
+}
+.leave{
+    color: gray;
+    font-style: italic;
+}
+
 /* CSS - Cascading Style Sheet */
 /* Palette color codes */
 /* Palette URL: http://paletton.com/#uid=1050u0kllll1qRAbnurvjcfWN38 */
