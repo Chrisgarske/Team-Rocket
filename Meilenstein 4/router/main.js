@@ -46,9 +46,10 @@ module.exports = function (app) {
         if (!where(players, {id: req.params.id})) {
             res.status(404).json('Der genannte Spieler existiert nicht');
         } else {
-            let filtered = _.filter(AllPlayers, function (e) {
+            let filtered = filter(e => players);
+            {
                 return !(e.id === req.params.id);
-            });
+            }
             AllPlayers = filtered;
             res.status(200).json(filtered);
         }
