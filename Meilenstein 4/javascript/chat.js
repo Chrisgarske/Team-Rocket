@@ -3,7 +3,7 @@ const socket = io();
 socket.on('connect', () => {
 
     function joinServer() {
-        let userName = prompt('Username');
+        let userName = prompt('Bitte gib einen Usernamen ein');
         socket.emit('join', userName);
     }
 
@@ -35,14 +35,14 @@ socket.on('connect', () => {
         }
 
         function appendLeaveMessage(name) {
-            appendMessage($('<div class="leave">').text(`Benutzer hat die Runde verlassen: ${name}`));
+            appendMessage($('<div class="leave">').text(`Benutzer hat den Chat verlassen: ${name}`));
         }
 
         function appendWelcomeMessage(name) {
-            appendMessage($('<div class="welcome">').text(`Herzlich Willkommen: ${name}`));
+            appendMessage($('<div class="welcome">').text(`Herzlich Willkommen ${name}`));
         }
 
-        history.forEach(([name, message]) => appendMessage(name, message));
+        history.forEach(([name, message]) => appendTextMessage(name, message));
         appendWelcomeMessage(name);
 
         let messageField = $('#text');
@@ -56,7 +56,7 @@ socket.on('connect', () => {
         $('#senden').on('click', () => sendMessage());
         messageField.on('keypress', ({which}) => {
             const EnterKey = 13;
-            if (which == EnterKey) {
+            if (which === EnterKey) {
                 sendMessage();
             }
         });
