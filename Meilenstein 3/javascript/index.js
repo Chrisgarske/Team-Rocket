@@ -23,7 +23,7 @@ window.addEventListener("DOMContentLoaded", function () {
         addPlayerForm.addEventListener("submit", function (e) {
             e.preventDefault()
             sendForm(e.target);
-        })
+        });
     }
 })
 
@@ -38,10 +38,10 @@ function checkInfo() {
     var regexName = /^[a-zA-ZÄ-Üä-ü]+$/;
 
     if (!vorname.match(regexName)
-        || !name.match(regexName)
-        || !verein.match(regexName)
-        || !headcoach.match(regexName)
-        || !assistant.match(regexName)) {
+            || !name.match(regexName)
+            || !verein.match(regexName)
+            || !headcoach.match(regexName)
+            || !assistant.match(regexName)) {
 
         alert("Einige Eingaben sind fehlerhaft. Bitte überprüfen Sie ihre Eingaben");
         return false;
