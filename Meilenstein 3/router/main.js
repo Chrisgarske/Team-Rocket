@@ -1,7 +1,9 @@
 module.exports = function (app) {
 
+    const bodyParser = require('body-parser');
     const players = require('../players.json');
-
+    app.use(bodyParser.json());
+    
     app.get('/api/players', (req, res) => {
 
         let search = req.query.search || 'false';
@@ -42,17 +44,7 @@ module.exports = function (app) {
 
     app.delete('/api/players/:id', (req, res) => {
         console.log('DELETE request to homepage');
-
-        if (!where(players, {id: req.params.id})) {
-            res.status(404).json('Der genannte Spieler existiert nicht');
-        } else {
-            let filtered = filter(e => players);
-            {
-                return !(e.id === req.params.id);
-            }
-            AllPlayers = filtered;
-            res.status(200).json(filtered);
-        }
+            return res.status(200).json(players.filter(p => p.id !== req.params.id))
     });
 
 }
