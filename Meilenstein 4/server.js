@@ -2,6 +2,8 @@ const express = require('express');
 const app = require('express')();
 const http = require('http').Server(app);
 const io = require('socket.io')(http);
+const ip = '127.0.0.1';
+const port = 3000;
 
 // main file um eine antwort an den browser zu schicken
 require('./router/main')(app);
@@ -14,7 +16,7 @@ app.use('/javascript', express.static(__dirname + '/javascript'));
 app.use('/socket.io-client', express.static(__dirname + '/../node_modules/socket.io-client'));
 
 let connectedUsers = new Set();
-let historyMaxLength = 20;
+const historyMaxLength = 20;
 let historyRing = new Array(historyMaxLength);
 let historyCurrentIndex = -1;
 let historyLength = 0;
@@ -28,7 +30,7 @@ function nameAvailable(nameToCheck) {
     return true;
 }
 
-io.on('connection', function(socket){
+io.on('connection', function (socket) {
 
     socket.on('join', (name) => {
         if (!nameAvailable(name)) {
@@ -62,8 +64,6 @@ io.on('connection', function(socket){
     });
 });
 
-var server = http.listen(3000, function () {
-    var port = server.address().port;
-    console.log("Example app listening at http://127.0.0.1:%s", port);
+http.listen(port, () => {
+    console.log(`Server is running at http://${ip}:${port}`);
 });
-
