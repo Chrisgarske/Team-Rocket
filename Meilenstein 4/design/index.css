@@ -2,7 +2,7 @@
 
 header {
     font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
-    background: rgba(253,108,0, 0.7);
+    background: rgba(253, 108, 0, 0.7);
     text-align: center;
     color: white;
     font-size: 24px;
@@ -23,7 +23,6 @@ body {
     min-height: 100%;
     padding-bottom: 5.7em;
 }
-
 
 img {
     max-width: 10%;
@@ -202,20 +201,62 @@ th, td {
 
 #chat {
     background: white;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: auto;
 }
 
-.name::after{
-    content: ":";
+.name::after {
+    content: ": ";
 }
 
-.join{
+.join {
     color: gray;
     font-style: italic;
 
 }
-.leave{
+
+.leave {
     color: gray;
     font-style: italic;
+}
+
+.welcome {
+    font-weight: bold;
+}
+
+
+#text{
+    border: 1px solid black;
+    float: left;
+    padding-bottom: 10px;
+    margin-top: 20px;
+}
+
+#senden {
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+    padding: 6px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    float: inherit;
+    margin-top: 20px;
+
+}
+
+#senden:hover{
+    background-color: #060402;
+    color: white;
+}
+
+#messages {
+    padding-left: 5px;
 }
 
 /* CSS - Cascading Style Sheet */
